@@ -1,0 +1,68 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:scaleType = "centerCrop"
+    tools:context="com.example.mysecondapp.fragment.HomeFragment">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1">
+
+        <TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="Welcome to Buddy Care!"
+                android:textStyle="bold|italic"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"/>
+        </TableRow>
+
+    <TableRow>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Check out the health tips we have for you."
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"/>
+    </TableRow>
+
+        <TableRow>
+            <View
+                android:layout_width="10dp"
+                android:layout_height="2dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="#c0c0c0"
+                android:layout_span="2"/>
+        </TableRow>
+
+        <TableRow>
+            <ListView
+                android:id="@+id/rssList"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                ></ListView>
+        </TableRow>
+
+
+    </TableLayout>
+
+</FrameLayout>

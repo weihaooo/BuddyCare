@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+    android:id="@+id/APlus"
+    android:title="A+"/>
+
+    <item
+        android:id="@+id/AMinus"
+        android:title="A-"/>
+
+    <item
+        android:id="@+id/BPlus"
+        android:title="B+"/>
+
+    <item
+        android:id="@+id/BMinus"
+        android:title="B-"/>
+
+    <item
+        android:id="@+id/ABPlus"
+        android:title="AB+"/>
+
+    <item
+        android:id="@+id/ABMinus"
+        android:title="AB-"/>
+
+    <item
+        android:id="@+id/OPlus"
+        android:title="O+"/>
+
+    <item
+        android:id="@+id/OMinus"
+        android:title="O-"/>
+
+</menu>

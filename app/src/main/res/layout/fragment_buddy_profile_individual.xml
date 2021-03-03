@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:scaleType="centerCrop"
+    tools:context=".fragment.BuddyProfileIndividualFragment">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:stretchColumns="1">
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/budLocationTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Buddy's Location"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textAlignment="center"
+                    android:singleLine="true"
+                    android:layout_span="2"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/myBuddyLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15sp"
+                    android:text="Current location (home): "
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/textView_MyBuddyLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="bottom"
+                    android:maxLines="25"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="8dp"
+                    tools:ignore="MissingConstraints" />
+            </TableRow>
+
+            <TableRow>
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#c0c0c0"
+                    android:layout_span="2"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/budHeartRateTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textStyle="bold"
+                    android:text="Buddy's Heart Rate"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textAlignment="center"
+                    android:singleLine="true"
+                    android:layout_span="2"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/myBuddyHeartRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15sp"
+                    android:text=""
+                    android:singleLine="true" />
+            </TableRow>
+
+            <TableRow>
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="2dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="#c0c0c0"
+                    android:layout_span="2"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/budProfileTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textStyle="bold"
+                    android:text="Buddy's Profile"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textAlignment="center"
+                    android:singleLine="true"
+                    android:layout_span="2"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15sp"
+                    android:text="Email address: "
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/emailVal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15sp"
+                    android:text="weihaooo@gmail.com"
+                    android:singleLine="true" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15sp"
+                    android:text="Password: "
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/passwordVal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15sp"
+                    android:text="***************"
+                    android:singleLine="true" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/nric"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15sp"
+                    android:text="NRIC: "
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/nricVal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15sp"
+                    android:text="S123456A"
+                    android:singleLine="true" />
+            </TableRow>
+
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15sp"
+                    android:text="Name: "
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/nameVal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15sp"
+                    android:text="Soh Wei Hao"
+                    android:singleLine="true" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15sp"
+                    android:text="Gender: "
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/genderVal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15sp"
+                    android:text="M"
+                    android:singleLine="true" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15sp"
+                    android:text="Date of Birth: "
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/dobVal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15sp"
+                    android:text="20/08/1993"
+                    android:singleLine="true" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15sp"
+                    android:text="Contact Number: "
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/contactVal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15sp"
+                    android:text="91234567"
+                    android:singleLine="true" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/eContact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15sp"
+                    android:text="Emergency Contact: "
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/eContactVal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15sp"
+                    android:text="87654321"
+                    android:singleLine="true" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/resAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15sp"
+                    android:text="Residential Address: "
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/resAddressVal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:width="0dip"
+                    android:text="Blk 888, Marsiling Drive 88, #08-88, Singapore 540888"
+                    android:textSize="15sp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/bloodType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp"
+                    android:text="Blood Type: "
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/bloodTypeVal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:textSize="15sp"
+                    android:text="A"
+                    android:singleLine="true" />
+            </TableRow>
+
+            <TableRow>
+                <Button
+                    android:id="@+id/deleteBuddy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_span="2"
+                    android:text="Delete Buddy" />
+            </TableRow>
+
+
+
+        </TableLayout>
+    </ScrollView>
+
+</FrameLayout>
